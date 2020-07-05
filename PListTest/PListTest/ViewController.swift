@@ -19,6 +19,8 @@ class ViewController: UIViewController {
             print("Value : \(fruits.Org)")
             print("Value : \(fruits.Ki)")
         }
+        
+        self.createWebPropertyList()
     }
 
     func getFruitPList(withName name : String) -> Fruits?{
@@ -28,6 +30,20 @@ class ViewController: UIViewController {
         }
         
         return nil
+    }
+    
+    func createWebPropertyList(){
+        let webPropertyList = WebProperty(host:"https://www.google.com",path: "/your-name",port: "8080")
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+        let path = FileManager.default.urls(for: .documentDirectory, in: .userDomainMask)[0].appendingPathComponent("WebProperty.plist")
+        
+        do{
+            let data = try encoder.encode(webPropertyList)
+            try data.write(to: path)
+        }catch{
+            print(error)
+        }
     }
 }
 
