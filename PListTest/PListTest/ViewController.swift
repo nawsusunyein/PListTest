@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import SwiftToast
 
 class ViewController: UIViewController {
 
@@ -22,6 +23,21 @@ class ViewController: UIViewController {
         
         print("blah blah PR test")
         self.createWebPropertyList()
+        
+        let test = SwiftToast(text: "This is a Toast")
+        present(test, animated: true)
+        
+        #if LOCAL
+            print("it is local scheme")
+        #elseif DEV
+            print("it is dev scheme")
+        #elseif STAGING
+            print("it is staging scheme")
+        #elseif QA
+            print("it is QA scheme")
+        #elseif PRODUCTION
+            print("it is production scheme")
+        #endif
     }
 
     func getFruitPList(withName name : String) -> Fruits?{

@@ -7,7 +7,7 @@ target 'PListTest' do
 
   # Pods for PListTest
   pod 'SwiftToast'
-
+  pod 'FirebaseCore'
 end
 
 
