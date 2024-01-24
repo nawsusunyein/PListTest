@@ -38,6 +38,8 @@ class ViewController: UIViewController {
         #elseif PRODUCTION
             print("it is production scheme")
         #endif
+        
+        print("url : \(AppConfig.baseURL)")
     }
 
     func getFruitPList(withName name : String) -> Fruits?{
