@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -15,9 +15,12 @@
 		6A00908D24B230C6007F1EBD /* Fruit.plist in Resources */ = {isa = PBXBuildFile; fileRef = 6A00908C24B230C6007F1EBD /* Fruit.plist */; };
 		6A00908F24B23609007F1EBD /* Fruit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A00908E24B23609007F1EBD /* Fruit.swift */; };
 		6A00909124B23930007F1EBD /* WebProperty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A00909024B23930007F1EBD /* WebProperty.swift */; };
+		6A4653592B6143C3003B6EC8 /* Pods_PListTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A4653582B6143C3003B6EC8 /* Pods_PListTest.framework */; };
+		6A46535B2B61444D003B6EC8 /* SwiftToast.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6A46535A2B61444D003B6EC8 /* SwiftToast.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		532C55381D98B54D6C04866E /* Pods-PListTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PListTest.debug.xcconfig"; path = "Target Support Files/Pods-PListTest/Pods-PListTest.debug.xcconfig"; sourceTree = "<group>"; };
 		6A00907524B23048007F1EBD /* PListTest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PListTest.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6A00907824B23048007F1EBD /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		6A00907C24B23048007F1EBD /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -28,6 +31,10 @@
 		6A00908C24B230C6007F1EBD /* Fruit.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Fruit.plist; sourceTree = "<group>"; };
 		6A00908E24B23609007F1EBD /* Fruit.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Fruit.swift; sourceTree = "<group>"; };
 		6A00909024B23930007F1EBD /* WebProperty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebProperty.swift; sourceTree = "<group>"; };
+		6A4653582B6143C3003B6EC8 /* Pods_PListTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = Pods_PListTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		6A46535A2B61444D003B6EC8 /* SwiftToast.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = SwiftToast.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7091EEB063A223FA907D47A3 /* Pods-PListTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PListTest.release.xcconfig"; path = "Target Support Files/Pods-PListTest/Pods-PListTest.release.xcconfig"; sourceTree = "<group>"; };
+		FF34EF713B61442CA214B6A2 /* Pods_PListTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PListTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,17 +42,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6A46535B2B61444D003B6EC8 /* SwiftToast.framework in Frameworks */,
+				6A4653592B6143C3003B6EC8 /* Pods_PListTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4353D3066788E29006EA5060 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				532C55381D98B54D6C04866E /* Pods-PListTest.debug.xcconfig */,
+				7091EEB063A223FA907D47A3 /* Pods-PListTest.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
 		6A00906C24B23048007F1EBD = {
 			isa = PBXGroup;
 			children = (
 				6A00907724B23048007F1EBD /* PListTest */,
 				6A00907624B23048007F1EBD /* Products */,
+				4353D3066788E29006EA5060 /* Pods */,
+				D6AD8D7F89B57A8584E68AFA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -73,6 +93,16 @@
 			path = PListTest;
 			sourceTree = "<group>";
 		};
+		D6AD8D7F89B57A8584E68AFA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6A46535A2B61444D003B6EC8 /* SwiftToast.framework */,
+				6A4653582B6143C3003B6EC8 /* Pods_PListTest.framework */,
+				FF34EF713B61442CA214B6A2 /* Pods_PListTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -80,9 +110,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 6A00908924B2304E007F1EBD /* Build configuration list for PBXNativeTarget "PListTest" */;
 			buildPhases = (
+				1953B89F6208FA8FFBC9E514 /* [CP] Check Pods Manifest.lock */,
 				6A00907124B23048007F1EBD /* Sources */,
 				6A00907224B23048007F1EBD /* Frameworks */,
 				6A00907324B23048007F1EBD /* Resources */,
+				F07D9B234D23F4FED81F7197 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -139,6 +171,48 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		1953B89F6208FA8FFBC9E514 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-PListTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F07D9B234D23F4FED81F7197 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PListTest/Pods-PListTest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PListTest/Pods-PListTest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-PListTest/Pods-PListTest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		6A00907124B23048007F1EBD /* Sources */ = {
@@ -290,6 +364,7 @@
 		};
 		6A00908A24B2304E007F1EBD /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 532C55381D98B54D6C04866E /* Pods-PListTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -307,6 +382,7 @@
 		};
 		6A00908B24B2304E007F1EBD /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7091EEB063A223FA907D47A3 /* Pods-PListTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

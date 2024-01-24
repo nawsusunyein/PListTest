@@ -1,0 +1,6 @@
+framework module Pods_PListTest {
+  umbrella header "Pods-PListTest-umbrella.h"
+
+  export *
+  module * { export * }
+}

@@ -1,0 +1,16 @@
+PODS:
+  - SwiftToast (1.1.3)
+
+DEPENDENCIES:
+  - SwiftToast
+
+SPEC REPOS:
+  trunk:
+    - SwiftToast
+
+SPEC CHECKSUMS:
+  SwiftToast: 029cbeda85c04fb3fa5df774ba461b19971bc6c5
+
+PODFILE CHECKSUM: d1dbf6532445fd0bdf00f1343aad68b3813f9f2d
+
+COCOAPODS: 1.13.0
